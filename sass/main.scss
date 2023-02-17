@@ -1,0 +1,123 @@
+@use 'variables';
+@use 'cart';
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Playfair+Display&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+}
+
+body {
+  background-color: #DA0037;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+aside {
+  padding: 1.5rem;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+    a{
+      text-decoration: none;
+      color: white;
+    } 
+
+  .logo {
+    width: 250px;
+    height: 115px;
+  }
+  
+  .menu_button {
+    gap: 1rem;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: 0;
+    color: white;
+    cursor: pointer;
+  }
+
+.cart_button{
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-evenly;
+
+  .number-change{
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 90%;
+    background-color: white;
+    color: black;
+  }
+
+}
+
+
+
+}
+
+
+main {
+  background-color: white;
+  border-radius: 2rem;
+  margin: 1rem;
+  margin-left: 0;
+  padding: 3rem;
+}
+
+.main_title {
+  font-family: "Open Sans", sans-serif;
+}
+
+main .product_container {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+main .product_container .product_image {
+  max-width: 100%;
+  border-radius: 1rem;
+}
+
+main .product_container .product_details {
+  color: white;
+  background-color: #DA0037;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  position: relative;
+  margin-top: -2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+main .product_container .product_title {
+  font-size: 1rem;
+}
+
+main .product_container .product_addbtn {
+  margin-top: 0.5rem;
+  border: 0;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  border: 2px solid white;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+main .product_container .product_addbtn:hover {
+  background-color: #DA0037;
+  color: white;
+}

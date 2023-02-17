@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>ClothingStore</title>
+  </head>
+  <body>
+    <aside>
+      <img src="images/logo.png" alt="logo" />
+      <button class="menu_button aside_button">
+        <a href="index.html">Continue shopping!</a><i class="bi bi-gem"></i>
+      </button>
+      <a class="menu_button aside_button cart_button" href="cart.html">Cart<i class="bi bi-cart4"></i></a>
+      </button>
+    </aside>
+    <main>
+      <h2 class="main_title">Your cart</h2>
+      <p class="empty_cart">Your cart is empty <i class="bi bi-emoji-frown"></i>
+      </p>
+      <div class="cart_container">
+        
+        
+      </div>
+      <div class="cart_actions">
+        <div class="cart_actions-left">
+          <button class="cart_actions-clear">Clear your cart</button>
+        </div>
+        <div class="cart_actions-right">
+          <div class="cart_actions-total">
+            <p>Total</p>
+            <p id="total"></p>
+          </div>
+          <button class="cart_actions-complete">Purchase!</button>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="js/cart.js"></script>
+  </body>
+</html>
